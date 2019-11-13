@@ -1,0 +1,359 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*******************************/
+/*******************************/
+/*************NavBar************/
+/*******************************/
+/*******************************/
+
+#navbar{
+    z-index: 1;
+}
+
+.header {
+    background: rgb(10, 34, 61);
+    color: #ffffff;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 150px;
+    z-index: 1;
+}
+
+.monLogo{
+    width: 35%;
+    margin-left: 25%;
+}
+
+.lienNav{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+#myDropdown{
+    right: 2%;
+}
+
+#myDropdown a:hover{
+    background: rgb(0, 195, 255);
+}
+
+.myDropBtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    font-size: x-large;
+  }
+  
+.dropdown-contenu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    overflow: auto;
+    z-index: 1;
+    margin-top: 1%;
+    float: right;
+}
+
+.dropdown-contenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  
+  
+.show {
+    display: block;
+}
+
+/*******************************/
+/*******************************/
+/***sticky***/
+/*******************************/
+/*******************************/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+
+/*******************************/
+/*******************************/
+/**********animation************/
+/*******************************/
+/*******************************/
+  
+.fade-in{
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+.animGauche{
+    animation: gauche 2s;
+    animation-fill-mode: forwards;
+}
+
+.animDroite{
+    animation: droite 2s;
+    animation-fill-mode: forwards;
+}
+
+.animTop{
+    animation: Top 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes gauche{
+    from{
+        opacity: 0;
+        margin-left: -100%;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes droite{
+    from{
+        opacity: 0;
+        margin-left: 200%;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes Top{
+    from{
+        opacity: 0;
+        margin-top: 200%;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 0%;
+    }
+}
+
+.fade-out{
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
+/*******************************/
+/*******************************/
+/**********menu Gauche**********/
+/*******************************/
+/*******************************/
+
+#monMenu ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+#monMenu ul li{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 5vh;
+    padding: 5%;
+    cursor: pointer;
+}
+
+#monMenu ul li:hover{
+    background: rgb(10, 34, 61);
+}
+
+#monMenu{
+    float: left;
+    position : absolute;
+    width: 50%;
+    height: calc(100vh - 50px);
+    background: #333;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#monMenu .active{
+    left: 50%;
+    z-index: 100; 
+}
+
+
+/*******************************/
+/*******************************/
+/************Section************/
+/*******************************/
+/*******************************/
+
+#container{
+    transition: 1s;
+}
+
+
+#sectionUn{
+    background: red;
+}
+
+#monTitre{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.1);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    margin-top: 0%;
+}
+
+
+#sectionDeux{
+    background: darkolivegreen;
+    width:100%;
+    height:100vh;
+}
+
+#maSectionDeux{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.1);
+    overflow:hidden;
+    display:none;
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center; 
+}
+
+h1, h3{
+    text-align: center;
+}
+
+#sectionTrois{
+    background: rgb(10, 34, 61);
+    
+}
+#maSectionTrois{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.1);
+    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    justify-content:center; 
+    align-items:center; 
+    color: white;
+    font-size: x-large;
+}
+
+
+.partiePage{
+    position: relative;
+    height: 100%;
+    max-width: 1024px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#monImage img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mots{
+    color: red;
+}
+
+.test{
+    display: none;
+}
+
+@media screen and (min-width: 1238px) {
+    #monMenu{
+        top: 153px;
+    } 
+}
+
+
+@media screen and (max-width: 1237px) {
+    #monMenu{
+        top: 137px;
+    } 
+}
+
+@media screen and (max-width: 970px) {
+    #monMenu{
+        width: 100%;
+        top: 108px;
+    }
+
+    .test{
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .lienNav{
+        display: none;
+    }
+
+    .monLogo{
+        margin-left: 0%;
+    }
+}
+
+

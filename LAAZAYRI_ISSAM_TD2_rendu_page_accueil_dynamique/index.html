@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <meta title="projet web">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div id="navbar">
+            <div class="header">
+                <div id="menuPrincipal">
+                    <div id="menu">
+                        <a href="javascript:switchDisplay();">
+                            <div class="test" id="barre">
+                              <i class="fa fa-bars" onclick="myFunctions()" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a href="javascript:switchDisplay();">
+                            <div class="test" id="croix" style="display:none">
+                                <i class="fa fa-times" onclick="myFunctions()" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a class="lienNav" onclick="myFunctions()" href="javascript:switchDisplay();">Menu</a>
+                        
+                    </div>
+                </div>
+                
+                <center><div class="logo"><img class="monLogo" alt="logo" src="img/logo.png"></div></center>
+                <div id="profil">
+                    <div class="dropdown">
+                        <a class="lienNav myDropBtn" onclick="myDrop()">Mon espace</a>
+                        <i class="fa fa-user-circle test dropbtn"onclick="myDrop()" aria-hidden="true"></i>
+                        <div id="myDropdown" class="dropdown-contenu">
+                            <a href="#">S'identifier</a>
+                            <a href="#">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="monMenu">
+            <ul>
+                <li>Talent</li>
+                <li>Bis/Gear</li>
+                <li>Traits Azeritique</li>
+                <li>Consommable</li>
+            </ul>
+        </div>
+        <div id="container">
+            <section id="sectionUn" class="partiePage">
+                <div class="fade-in">
+                    <h1 id="monTitre">Bienvenue sur le guide du chaman Élémentaire</h1>
+                </div>
+            </section>
+
+            <section id="sectionDeux" class="partiePage">
+                    <div id="maSectionDeux">
+                        <h1 id="anim">Un weakauras fortement recommandé</h1>
+                        <h3 id="anim2">récupérer le sur wago.io "Luxthos - Shaman Cooldowns"</h3>
+                        <div id="monImage"><img alt="truc" src="img/weakauras.jpg"></div>    
+                    </div>
+            </section>
+            <section id="sectionTrois" class="partiePage">
+                <div id="maSectionTrois">La phrase du jour c'est <b id="mots"></b></div>
+            </section>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</html>
